@@ -1,9 +1,9 @@
 import { DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
-  borderRadius: "5px",
+  borderRadius: "0.25rem",
   colors: {
-    main: "cyan",
-    secondary: "magenta",
+    backgroundColor: "hsl(155, 73%, 55%)",
+    color: "hsl(200, 19%, 18%)",
   },
 };
