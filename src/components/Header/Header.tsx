@@ -23,6 +23,7 @@ const StyledHeader = styled.header`
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1.5rem;
 
   & > img {
     height: 4rem;

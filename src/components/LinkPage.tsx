@@ -1,13 +1,15 @@
-import { Header } from "./Header/Header";
-import { Link } from "./Link";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
+import { ClassicLink } from "./ClassicLink";
 
 export function LinkPage() {
   return (
-    <div>
+    <>
       <Header iconUrl="https://via.placeholder.com/150" username="@yourname" />
       <main>
-        <Link url="www.linktr.ee" title="Classic Link!" />
+        <ClassicLink url="www.linktr.ee" title="Classic Link!" />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }

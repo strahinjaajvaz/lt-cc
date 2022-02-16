@@ -18,21 +18,21 @@ interface Props {
  * 2. We could have an onClick event that will trigger the analytics to be run.
  */
 
-export function Link({ url, title }: Props) {
+export function ClassicLink({ url, title }: Props) {
   return (
-    <StyledLink href={url} target="_blank">
+    <StyledClassicLink href={url} target="_blank">
       <div>
         <p>{title}</p>
       </div>
-    </StyledLink>
+    </StyledClassicLink>
   );
 }
 
-const StyledLink = styled.a`
+const StyledClassicLink = styled.a`
   text-decoration: none;
 
   div {
-    padding: 8px 0;
+    padding: 0.5rem 0;
     text-align: center;
     background-color: ${(props) => props.theme.colors.backgroundColor};
     color: ${(props) => props.theme.colors.color};

@@ -1,11 +1,11 @@
-import { Link } from "./Link";
+import { ClassicLink } from "./ClassicLink";
 import { renderWithTheme, screen } from "../../test/utils/render";
 
-describe("Link Component", () => {
-  it("should reader the Link component", () => {
+describe("Classic Link Component", () => {
+  it("should reader the Classic Link component", () => {
     const url = "https://linktr.ee";
 
-    renderWithTheme(<Link url={url} title="Link tree!" />);
+    renderWithTheme(<ClassicLink url={url} title="Link tree!" />);
     const linkEl = screen.getByRole("link");
     const titleEl = screen.getByText("Link tree!");
 
