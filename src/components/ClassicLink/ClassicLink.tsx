@@ -25,7 +25,7 @@ interface Props {
 
 export function ClassicLink({ url, title }: Props) {
   return (
-    <StyledClassicLink href={url} target="_blank">
+    <StyledClassicLink href={url} target="_blank" rel="noreferrer">
       <div>
         <p>{title}</p>
       </div>

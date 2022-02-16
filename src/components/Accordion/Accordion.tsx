@@ -1,6 +1,13 @@
 import { useState } from "react";
 import styled from "styled-components";
 
+/**
+ * Nice to haves:
+ *
+ * We can pass in an onClick handler that we can use to send analytics
+ *
+ */
+
 interface Props {
   title: string;
   children: React.ReactNode;

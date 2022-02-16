@@ -33,7 +33,7 @@ export function MusicLinkItem({
 }: Props) {
   return (
     <StyledMusicLinkItem last={!!last}>
-      <a href={url}>
+      <a href={url} target="_blank" rel="noreferrer">
         <Icon />
       </a>
       <div tabIndex={0} onClick={() => onClick(title)}>
