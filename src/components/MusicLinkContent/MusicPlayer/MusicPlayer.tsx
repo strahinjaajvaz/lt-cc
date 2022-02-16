@@ -13,7 +13,7 @@ export function MusicPlayer({ service }: Props) {
       <div className="container">
         <img className="album-art" src={albumArt} alt="album art" />
         <Play />
-        <p>{service}</p>
+        <p data-testid="service-player">{service}</p>
       </div>
       <div className="progress-bar" />
     </StyledContainer>

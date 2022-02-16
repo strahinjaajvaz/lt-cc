@@ -1,10 +1,5 @@
 import { Accordion } from "./Accordion";
-import {
-  renderWithTheme,
-  screen,
-  fireEvent,
-  waitFor,
-} from "../../test/utils/render";
+import { renderWithTheme, screen, fireEvent } from "../../test/utils/render";
 
 describe("Accordian Component", () => {
   it("should reader the Accordion component", () => {
@@ -33,7 +28,7 @@ describe("Accordian Component", () => {
     const btnEl = screen.getByRole("button");
     fireEvent.click(btnEl);
 
-    await waitFor(() => screen.findByText(content));
+    await screen.findByText(content);
 
     expect(screen.getByText(content)).toBeInTheDocument();
   });

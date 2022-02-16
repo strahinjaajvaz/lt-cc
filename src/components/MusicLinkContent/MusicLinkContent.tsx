@@ -18,16 +18,18 @@ export function MusicLinkContent({ data }: Props) {
   return (
     <StyledMusicLinkItem>
       {provider && <MusicPlayer service={provider} />}
-      {data.map(({ url, icon, title }, idx) => (
-        <MusicLinkItem
-          key={title}
-          icon={icon}
-          title={title}
-          url={url}
-          onClick={onClickHandler}
-          last={idx === data.length - 1}
-        />
-      ))}
+      <div data-testid="music-link-container">
+        {data.map(({ url, icon, title }, idx) => (
+          <MusicLinkItem
+            key={title}
+            icon={icon}
+            title={title}
+            url={url}
+            onClick={onClickHandler}
+            last={idx === data.length - 1}
+          />
+        ))}
+      </div>
     </StyledMusicLinkItem>
   );
 }
