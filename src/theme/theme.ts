@@ -5,5 +5,6 @@ export const theme: DefaultTheme = {
   colors: {
     backgroundColor: "hsl(155, 73%, 55%)",
     color: "hsl(200, 19%, 18%)",
+    listBackgroundColor: "hsl(200, 18%, 97%)",
   },
 };

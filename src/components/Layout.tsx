@@ -24,6 +24,9 @@ const StyledLayout = styled.div`
 
   main {
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   header,

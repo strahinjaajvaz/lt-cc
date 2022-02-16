@@ -5,10 +5,13 @@ declare module "styled-components" {
     borderRadius: string;
 
     // using the same values that are returned from the api
-    // as per the instructions given.
     colors: {
       backgroundColor: string;
       color: string;
+
+      // idealy, there would be a color pallet that would
+      // have this as grey.10
+      listBackgroundColor: string;
     };
   }
 }

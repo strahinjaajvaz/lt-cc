@@ -16,6 +16,11 @@ interface Props {
  * e.g. www.analytics.linktr.ee?redirect_url=${url}
  *
  * 2. We could have an onClick event that will trigger the analytics to be run.
+ *
+ * Design decisions:
+ * I struggled here as to whether I sould make this reusable for the Music and Shows list
+ * I decided against it and to keep it stand alone as I wanted to keep the Link as
+ * a link and to be used solely for navigation.
  */
 
 export function ClassicLink({ url, title }: Props) {
