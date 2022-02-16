@@ -9,8 +9,10 @@ declare module "styled-components" {
       backgroundColor: string;
       color: string;
 
-      // idealy, there would be a color pallet that would
-      // have this as grey.10
+      blueGrey: {
+        2: string;
+        3: string;
+      };
       listBackgroundColor: string;
     };
   }

@@ -4,14 +4,16 @@ import { ClassicLink } from "./ClassicLink";
 import { Accordion } from "./Accordion";
 import { MusicLinkContent } from "./MusicLinkContent/MusicLinkContent";
 
+import { musicLinkData } from "../mock/api/musicLinkData";
+
 export function LinkPage() {
   return (
     <>
       <Header iconUrl="https://via.placeholder.com/150" username="@yourname" />
       <main>
-        <ClassicLink url="www.linktr.ee" title="Classic Link!" />
+        <ClassicLink url="https://www.linktr.ee" title="Classic Link!" />
         <Accordion title="Music">
-          <MusicLinkContent />
+          <MusicLinkContent data={musicLinkData} />
         </Accordion>
       </main>
       <Footer />
