@@ -4,11 +4,6 @@ import { MusicLinkContentType } from "../types";
 
 import { Arrow } from "../../shared/Arrow";
 
-interface Props extends MusicLinkContentType {
-  onClick(pro: string): void;
-  last?: boolean;
-}
-
 /**
  * Notes:
  *
@@ -23,6 +18,11 @@ interface Props extends MusicLinkContentType {
  * each item. The deisngs didnt have anything for this case.
  *
  */
+
+interface Props extends MusicLinkContentType {
+  onClick(pro: string): void;
+  last?: boolean;
+}
 
 export function MusicLinkItem({
   icon: Icon,

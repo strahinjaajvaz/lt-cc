@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 import { Arrow } from "../../shared/Arrow";
 
+/**
+ * Nice to haves:
+ *
+ * It would be nice if there was a visial indicator for hovering over
+ * each item. The deisngs didnt have anything for this case.
+ */
+
 interface Props {
   title: string;
   location: string;

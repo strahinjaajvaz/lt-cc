@@ -1,15 +1,17 @@
 # Link tree coding challenge
 
-# Design decisions
+This is the coding challenge presented to me by Link Tree.
 
-- You could potentionally use CSS Variables. Since we are giving the user some customization, I went with the CSS-in-JS approach.
-- The arrow image for the list items could have been a seperate component and reused. I chose to leave it inline in each component as in the future it could be different for each component.
+## Design decisions
 
-# Optimisations
+- I've left comments throughout the code to describe anything i thought worth describing about design and the overall architecture of the app.
+
+## Optimisations
 
 - Minified all the svgs using this [tool](https://jakearchibald.github.io/svgomg/). Average reduction in size was around ~25%.
 
-# Nice to haves
+## TODO:
 
 - If this was a larger application, I'd have used Cypress for E2E testing.
 - Normalizing the css with something like [Normalize.css](https://necolas.github.io/normalize.css/).
+- Probably would build it with Next.Js for SEO optimization.

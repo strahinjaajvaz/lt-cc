@@ -6,7 +6,8 @@ import { default as arrowIcon } from "../../assets/svg/arrow.svg";
  * Notes:
  *
  * To make this arrow completely customizable, you could pass in props
- * for the rotation. Right now its just hard coded to point right.
+ * for the rotation, size, color, etc. Right now its just hard coded
+ * to point right.
  */
 
 export function Arrow() {

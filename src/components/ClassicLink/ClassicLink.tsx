@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-interface Props {
-  url: string;
-  title: string;
-}
-
 /**
  * Notes:
  *
@@ -22,6 +17,11 @@ interface Props {
  * I decided against it and to keep it stand alone as I wanted to keep the Link as
  * a link and to be used solely for navigation.
  */
+
+interface Props {
+  url: string;
+  title: string;
+}
 
 export function ClassicLink({ url, title }: Props) {
   return (

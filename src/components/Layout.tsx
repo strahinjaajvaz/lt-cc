@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+/**
+ * Design decission:
+ *
+ * For this challenge I chode to replicate the link design that is currently on `https://linktr.ee/guardian`.
+ *
+ */
+
 interface Props {
   children: React.ReactNode;
 }
@@ -8,12 +15,6 @@ export function Layout({ children }: Props) {
   return <StyledLayout>{children}</StyledLayout>;
 }
 
-/**
- * Design decission:
- *
- * For this challenge I chode to replicate the link design that is currently on `https://linktr.ee/guardian`.
- *
- */
 const StyledLayout = styled.div`
   display: flex;
   flex-direction: column;
