@@ -7,17 +7,19 @@ interface Props {
   location: string;
   soldOut?: boolean;
   url: string;
+  last: boolean;
 }
 
 export function ShowsLinkItem({
   title,
   location,
   soldOut = false,
+  last = false,
   url,
 }: Props) {
   return (
     <StyledAnchor href={url} target="_blank" rel="noreferrer">
-      <StyledShowsLinkItem>
+      <StyledShowsLinkItem last={last}>
         <div>
           <p>{title}</p>
           <p>{location}</p>
@@ -29,12 +31,18 @@ export function ShowsLinkItem({
   );
 }
 
-const StyledShowsLinkItem = styled.div`
+const StyledAnchor = styled.a`
+  text-decoration: none;
+`;
+
+const StyledShowsLinkItem = styled.div<{ last?: boolean }>`
   color: ${(props) => props.theme.colors.blueGrey["2"]};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid ${(props) => props.theme.colors.blueGrey["3"]};
+  border-bottom: 1px solid
+    ${(props) =>
+      !props.last ? props.theme.colors.blueGrey["3"] : "transparent"};
   padding: 0.5rem;
   margin-right: -1rem;
   padding-right: 1rem;
@@ -60,8 +68,4 @@ const StyledShowsLinkItem = styled.div`
     width: 0.75rem;
     transform: rotate(-90deg);
   }
-`;
-
-const StyledAnchor = styled.a`
-  text-decoration: none;
 `;
