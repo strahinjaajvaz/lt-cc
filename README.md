@@ -15,3 +15,7 @@ This is the coding challenge presented to me by Link Tree.
 - If this was a larger application, I'd have used Cypress for E2E testing.
 - Normalizing the css with something like [Normalize.css](https://necolas.github.io/normalize.css/).
 - Probably would build it with Next.Js for SEO optimization.
+
+## Deployed
+
+[https://lt-cc.vercel.app/](https://lt-cc.vercel.app/)
