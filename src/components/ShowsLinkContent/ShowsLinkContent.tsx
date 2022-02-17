@@ -26,7 +26,7 @@ import { default as songkick } from "../../assets/svg/songkick.svg";
  * }
  *
  * I decided to leave it in as its a visual indicator to the user
- * that there is still some contents
+ * that there is still some content
  */
 
 interface Props {

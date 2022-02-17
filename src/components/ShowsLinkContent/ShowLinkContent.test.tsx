@@ -3,8 +3,8 @@ import { renderWithTheme, screen } from "../../test/utils/render";
 
 import { showsListData } from "../../mock/api/showsLinkData";
 
-describe("The Forum, Melbourne Component", () => {
-  it("should reader the The Forum, Melbourne component", () => {
+describe("Show Link Content Component", () => {
+  it("should reader the Show Link Content component", () => {
     renderWithTheme(<ShowsLinkContent data={showsListData} />);
 
     expect(screen.getByText(/The Forum, Melbourne/i)).toBeInTheDocument();
