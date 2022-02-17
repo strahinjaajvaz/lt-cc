@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { MusicLinkContentType } from "../types";
 
-import { default as arrowIcon } from "../../../assets/svg/arrow.svg";
+import { Arrow } from "../../shared/Arrow";
 
 interface Props extends MusicLinkContentType {
   onClick(pro: string): void;
@@ -38,7 +38,7 @@ export function MusicLinkItem({
       </a>
       <div tabIndex={0} onClick={() => onClick(title)}>
         <p>{title}</p>
-        <img className="arrow" src={arrowIcon} alt="arrow icon" />
+        <Arrow />
       </div>
     </StyledMusicLinkItem>
   );
@@ -58,14 +58,8 @@ const StyledMusicLinkItem = styled.div<{ last: boolean }>`
     margin-right: -1rem;
     margin-left: 1rem;
     align-items: center;
+    padding-right: 1rem;
     cursor: pointer;
-  }
-
-  img.arrow {
-    height: 0.75rem;
-    width: 0.75rem;
-    transform: rotate(-90deg);
-    margin-right: 1rem;
   }
 
   svg > path {

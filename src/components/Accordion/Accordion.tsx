@@ -4,8 +4,12 @@ import styled from "styled-components";
 /**
  * Nice to haves:
  *
- * We can pass in an onClick handler that we can use to send analytics
+ * By default this is seft controlled. We could make it a component that
+ * is controlled from the parent incase if we have multiple expandable links
+ * and wanted to allow only one at a time.
  *
+ * With passing a custom onClick handler, we also have the ability to have
+ * events tracked. eg. Opening and closing the modal.
  */
 
 interface Props {

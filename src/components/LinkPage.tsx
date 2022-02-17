@@ -5,6 +5,7 @@ import { Accordion } from "./Accordion";
 import { MusicLinkContent } from "./MusicLinkContent/MusicLinkContent";
 
 import { musicLinkData } from "../mock/api/musicLinkData";
+import { ShowsLinkContent } from "./ShowsLinkContent";
 
 export function LinkPage() {
   return (
@@ -14,6 +15,9 @@ export function LinkPage() {
         <ClassicLink url="https://www.linktr.ee" title="Classic Link!" />
         <Accordion title="Music">
           <MusicLinkContent data={musicLinkData} />
+        </Accordion>
+        <Accordion title="Shows">
+          <ShowsLinkContent />
         </Accordion>
       </main>
       <Footer />
