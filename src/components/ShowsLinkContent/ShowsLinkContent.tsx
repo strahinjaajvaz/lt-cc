@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 import { ShowsLinkItem } from "./ShowsLinkItem";
 
-import { showsListData } from "../../mock/api/showsLinkData";
+import { ShowsLinkDataType } from "../../mock/api/showsLinkData";
 
 import { default as songkick } from "../../assets/svg/songkick.svg";
 
-export function ShowsLinkContent() {
+interface Props {
+  data: ShowsLinkDataType[];
+}
+
+export function ShowsLinkContent({ data }: Props) {
   return (
     <Container>
-      <ContentContainer>
-        {showsListData.map(({ id, ...item }, i) => (
-          <ShowsLinkItem
-            key={id}
-            {...item}
-            last={i === showsListData.length - 1}
-          />
+      <ContentContainer data-testid="show-link-container">
+        {data.map(({ id, ...item }, i) => (
+          <ShowsLinkItem key={id} {...item} last={i === data.length - 1} />
         ))}
       </ContentContainer>
       <img src={songkick} alt="Songkick icon" />

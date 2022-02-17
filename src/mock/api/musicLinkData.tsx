@@ -43,3 +43,5 @@ export const musicLinkData = [
     url: "https://bandcamp.com/",
   },
 ];
+
+export type MusicLinkData = typeof musicLinkData;
