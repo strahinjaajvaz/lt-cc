@@ -5,6 +5,7 @@ This is the coding challenge presented to me by Link Tree.
 ## Design decisions
 
 - I've left comments throughout the code to describe anything i thought worth describing about design and the overall architecture of the app.
+- Normally for each feature, I'd create a new branch, pull request and merge. I didn't take that approach here as there wasn't a need as it was only a simple task.
 
 ## Optimisations
 
